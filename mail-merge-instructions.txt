@@ -1,0 +1,12 @@
+MAIL MERGE: CONNECT THE RECIPIENT DATA
+
+Writer database registrations are local to a computer. The saved template refers to the logical data source BCPSRecipients; it must be connected to the supplied CSV after downloading this repository.
+
+1. Open invitation-template.odt in Writer. Do not replace the grey database fields with ordinary text.
+2. Choose Tools > Mail Merge Wizard and use the current document, with Letter as document type.
+3. At the address step, select Select Address List (or Select Different Address List), then Add and choose this folder's recipients.csv. If asked, use UTF-8 encoding, comma as the field separator, double quote as the text delimiter, and the first row as column names.
+4. The template already has its address fields. Disable insertion of an additional address block and greeting so they are not duplicated. Finish the wizard.
+5. Use Edit > Exchange Database to point existing fields to the newly added CSV data source. Expand that source, select its recipients table, and choose Define. This step reconnects the existing database fields if their old registration is unavailable.
+6. Preview records using the mail merge toolbar. Check that FullName, Address, and City change together for each recipient. If a field is unresolved, use Insert > Field > More Fields > Database > Mail merge fields, expand the selected source/table, and replace it with the corresponding column; FullName appears twice.
+7. Choose Save Merged Documents on the mail merge toolbar, select all three records, and save as a single ODT document. Menu wording can vary slightly by LibreOffice version.
+
